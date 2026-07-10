@@ -2,29 +2,30 @@ package main
 
 import "fmt"
 
-	var number int
-	func largestNumber(){
+var number int
 
-		count := 10
-		largestNumber := 0
+func largestNumber() {
 
-		for count > 10{
+	count := 10
+	largestNumber := 0
 
-			if(count != 10){
-				fmt.Println("Enter a number: ")
-				fmt.Scan(&number)
-			}
+	for count > 10 {
 
-			if(number > largestNumber){
-				largestNumber = number
-			}
-			count--
+		if count != 10 {
+			fmt.Println("Enter a number: ")
+			fmt.Scan(&number)
 		}
 
-		fmt.Println("The largest number is", largestNumber)
-
-	func main(){
-		largestNumber()
+		if number > largestNumber {
+			largestNumber = number
+		}
+		count--
 	}
+
+	fmt.Println("The largest number is", largestNumber)
 }
 
+func main() {
+	largestNumber()
+
+}

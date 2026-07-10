@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/CheckoutSystem.iml" filepath="$PROJECT_DIR$/.idea/CheckoutSystem.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/ChapterFour.iml" filepath="$PROJECT_DIR$/.idea/ChapterFour.iml" />
+>>>>>>> 6ed5c7a (Chapter four put into folders)
     </modules>
   </component>
 </project>
