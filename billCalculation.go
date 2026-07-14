@@ -6,7 +6,7 @@ import (
 )
 
 func billCalculation(customer string, cashier string, discountPercent float64, cart []CartItem) {
-	var amountGivenToCashierByCustomer float64
+	//var amountGivenToCashierByCustomer float64
 	var subTotal float64
 
 	now := time.Now()

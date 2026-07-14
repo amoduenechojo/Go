@@ -40,26 +40,26 @@ func main() {
 			Price:    unitPrice,
 		})
 
-		fmt.Print("Add more Items? (yes/no): ")
+		fmt.Print("Add more Items? (yes/no): "))
 		fmt.Scan(&moreItem)
 
 		if moreItem != "yes" {
 			break
 		}
+
+		fmt.Println("Cashier's name: ")
+		fmt.Scan(&cashierName)
+
+		fmt.Println("How much discount will the customer get?")
+		fmt.Scan(&customersDiscount)
+
+		billCalculation(customersName, cashierName, customersDiscount, cart)
+
+		fmt.Println("=========================================================================================")
+
+		fmt.Println("How much did the customer give to you?")
+		fmt.Scan(&amountGivenToCashierByCustomer)
+
+		receiptGeneration(customersName, cashierName, customersDiscount, cart, amountGivenToCashierByCustomer)
 	}
-
-	fmt.Println("Cashier's name: ")
-	fmt.Scan(&cashierName)
-
-	fmt.Println("How much discount will the customer get?")
-	fmt.Scan(&customersDiscount)
-
-	billCalculation(customersName, cashierName, customersDiscount, cart)
-
-	fmt.Println("=========================================================================================")
-
-	fmt.Println("How much did the customer give to you?")
-	fmt.Scan(&amountGivenToCashierByCustomer)
-
-	receiptGeneration(customersName, cashierName, discountPercent, cart, amountGivenToCashierByCustomer)
 }
